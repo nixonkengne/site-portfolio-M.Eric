@@ -1,0 +1,313 @@
+h1, h2, h3, h4, h5, h6{
+    font-family:"releway", sans-serif;
+}
+/*====herder===*/
+#header{
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    transition: all ease-in-out 0.5s;
+    z-index: 9997;
+    transition: all 0.5s;
+    padding: 0px 15px;
+    background: #040b14;
+}
+#header .profile img{
+    width: 150px;
+    object-fit: cover;
+    height: 150px;
+    margin:15 auto;
+    display: block;
+    border: 8px solid #2c2f3f;
+    object-fit: cover;
+    text-align: center;
+    position: relative;
+    top: 10px;
+    left: 55px;
+}
+#header .profile a h1{
+    font-size: 24px;
+    font-weight: 600px;
+    -moz-text-align-last: center;
+    text-align-last:center;
+    font-family: "poppins" sans-serif;
+    position: relative;
+    top:15px;
+    text-decoration: none;
+}
+#header .profile .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #212431;
+    color: #fff;
+    line-height: 1;
+    padding: 10px 0px;
+    margin-right: 4px;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+    border-radius: 50px;
+    position: relative;
+    top: 15px;
+}
+#header .profile .social-links a:hover{
+    background: #3760af;
+    color: #fff;
+    text-decoration: none;
+}
+#header .profile a h1:hover{
+    color: #fff;
+    text-decoration: none;
+}
+#main {
+    margin-left: 300px;
+}
+@media(max-width: 1199px){
+    #herder{
+        left: -300px;
+    }
+}
+/*===menu de navigation===*/
+
+.nav-menu{
+    padding-top: 30px;
+}
+.nav-menu*{
+    list-style: none;
+}
+.nav-menu > ul li{
+    position: relative;
+    white-space: nowrap;
+    list-style: none;
+
+}
+.nav-menu a{
+    display: flex;
+    align-items: center;
+    color:#a8a9b4;
+    padding: 4px 15px;
+    margin-bottom: 8px;
+    transition: 0.3s;
+    font-size: 15px;
+    text-decoration: none;
+}
+.nav-menu a i{
+    font-size: 24px;
+    padding-right: 8px;
+    color:#6f7180
+}
+.nav-menu a:hover,
+.nav-menu .active > a,
+.nav-menu li:hover > a{
+    text-decoration: none;
+    color: #fff;
+}
+.nav-menu a:hover i,
+.nav-menu .active > a i,
+.nav-menu li:hover > a i{
+    color: #3760af;
+}
+/*====mobile nav===*/
+.mobile-nav-toggle{
+    position: fixed;
+    right: 15px;
+    top: 15px;
+    z-index: 9998;
+    font-size: 24px;
+    transition: all 0.4s;
+    outline: none !important ;
+    line-height: 1;
+    cursor: pointer;
+    text-align: right;
+}
+.mobile-nav-toggle i{
+    color: #3760af;
+}
+.mobile-nav-active{
+    overflow: hidden;
+}
+.mobile-nav-active .mobile-nav-toggle i{
+    color: #fff;
+}
+/*----premiere section---*/
+#section1 {
+    width: 100%;
+}
+.content img{
+    width: 100%;
+}
+.container{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position: relative;
+}
+.text{
+    position: absolute;
+    top: 0px;
+    color: #fff;
+    font-family: "poppins" sans-serif;
+    font-size: 50px;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+/*======section1=====*/
+#section1{
+    width: 100%;
+    height: 100vh;
+    background: url(images/img3.jpg) top center;
+    background-size: cover;
+}
+#section1::before{
+    content: "";
+    background: #fff;
+    position: absolute;
+    z-index: 1;
+}
+.text-container {
+    position: relative;
+    z-index: 2;
+    min-width: 300px;
+}
+#section1 h1{
+    margin: 0 0 10px 0;
+    font-weight: 700;
+    color: #fff;
+}
+#section1 p{
+    color: #fff;
+    margin-bottom: 34px;
+    font-size: 34px;
+    font-family: "poppins" sans-serif;
+}
+#section1 p span{
+    color: #fff;
+    padding-bottom: 4px;
+    letter-spacing: 1px;
+    border-bottom: 3px solid #3760af;
+}
+
+/*===marke it responsive===*/
+h2{
+    color: #f01a24;
+}
+@media(min-width:1024px){
+    #section1{
+        background-attachment: fixed;
+    }
+}
+@media ( max-width:768px) {
+    #section1 h1{
+        font-size: 28px;
+        line-height: 36px;
+    }
+    #section p{
+        font-size: 28px;
+        line-height: 24px;
+        margin-bottom: 30px;
+    }
+}
+
+/*=== section about====*/
+
+.para1{
+    font-style: italic;
+} 
+.about .content h3{
+    font-weight: 700;
+    font-size: 26px;
+    color: #f01a24;
+}
+.about .content ul{
+    list-style: none;
+}
+.about .content ul li{
+    padding-bottom: 10px;
+}
+.about .content ul li i{
+    font-size: 20px;
+    padding-right: 4px;
+    color: #3760af;
+}
+.about .content ul li a{
+    text-decoration: none;
+}
+
+/*----Facts-----*/
+.facts {
+    padding-bottom: 30px;
+}
+.facts .count-box{
+    padding: 50px;
+    width: 100%;
+}
+.facts .count-box i{
+    display: block;
+    font-size: 50px;
+    color: #3760af;
+    float: left;
+}
+.facts .count-box span{
+    font-size: 60px;
+    line-height: 40px;
+    display: block;
+    font-weight: 650;
+    color: #f01a24;
+    margin-right: 30px;
+}
+.facts .count-box p{
+    width: 150px;
+    padding: 15px 0 0 0;
+    margin: 0 0 0 60px;
+    font-family: "raleway", sans-serif;
+    font-size: 15px;
+    color: #122f57;
+    transition: ease-in-out 0.5s;
+}
+section-bg{
+    background: #f5f8fd;
+}
+section{
+    padding-bottom: 30px;
+    padding: 40px;
+    overflow: hidden;
+}
+.section h2{
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+section h2::after{
+    content: "";
+    position: relative;
+    display: block;
+    top: 10px;
+    width: 65px;
+    height: 4px;
+    background: #3760af;
+}
+section p{
+    position: relative;
+    margin-top: 20px;
+}
+
+/*====skills====*/
+
+#skills .competences{
+    height: 50px;
+    display: block;
+}
+#skills .competences .langue{
+    padding: 10px 0;
+    margin: 0 0 6px 0;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    font-family: "poppins", sans-serif;
+    color: ;
+}
